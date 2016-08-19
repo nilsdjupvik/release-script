@@ -140,6 +140,7 @@ All options for this package are kept under `'release-script'` node in your proj
 - `tmpBowerRepo` - the folder name for temporary files for bower pkg.
   - `default` value: `'tmp-bower-repo'`
 - `altPkgRootFolder` - the folder name for alternative npm package's root folder
+- `versionPrefix` - the prefix to use for versions ( e.g. 'v')
 
 It is advised to add `bowerRoot` and `tmpBowerRepo` folders to your `.gitignore` file.
 

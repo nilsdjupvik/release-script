@@ -52,6 +52,8 @@ const altPkgRootFolder = configOptions.altPkgRootFolder;
 
 const skipBuildStep = configOptions.skipBuildStep;
 
+const versionPrefix = configOptions.versionPrefix || '';
+
 
 //------------------------------------------------------------------------------
 // command line options
@@ -282,7 +284,7 @@ function release({ type, preid, npmTagName }) {
     }
   } // if (npmjson.scripts)
 
-  const vVersion = `v${newVersion}`;
+  const vVersion = `${versionPrefix}${newVersion}`;
   const versionAndNotes = notesForRelease = notesForRelease ? `${vVersion} ${notesForRelease}` : vVersion;
 
   // generate changelog
