@@ -1,8 +1,8 @@
 {
   "name": "release-script",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Release tools for projects. From github repo to npm and bower packages",
-  "private":true,
+  "private": true,
   "bin": {
     "release": "./bin/release.js"
   },
